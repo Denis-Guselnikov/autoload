@@ -7,6 +7,15 @@ test1
 автолоадер и не используя require и include создать эксземпляры каждого из классов и запустить
 метод do().
 ```
+Ответ:
+```
+C:\php\php.exe D:\Server543\OSPanel\domains\autoload\autoload\test\index.php
+Загрузка:Test1
+its works!
+Doing Test1!Загрузка:Test2
+Doing Test2!
+Process finished with exit code 0
+```
 test3  
 ```
 Создать файл index.php и дерикторию src в которой размещать классы соответственно стандарту 
@@ -14,4 +23,13 @@ test3
 помощи composer. В файле index.php добавить use для таких классов One\Test, Two\Test,
 Three\Four\Test создать экземпляры всех классов и вызвать для них метод do(), чтобы не
  было конфликта имён использовать псевдонимы Test1, Test2, Test3 соответственно.
+```
+Ответ:
+```
+Fatal error: Uncaught Error: Class "One\Test1" not found in D:\Server543\OSPanel\domains\autoload\autoload\test3\index.php:8
+Stack trace:
+#0 {main}
+  thrown in D:\Server543\OSPanel\domains\autoload\autoload\test3\index.php on line 8
+  
+  Невидет классы
 ```
