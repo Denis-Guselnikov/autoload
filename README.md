@@ -12,7 +12,8 @@ test1
 C:\php\php.exe D:\Server543\OSPanel\domains\autoload\autoload\test\index.php
 Загрузка:Test1
 its works!
-Doing Test1!Загрузка:Test2
+Doing Test1!
+Загрузка:Test2
 Doing Test2!
 Process finished with exit code 0
 ```
@@ -26,10 +27,10 @@ Three\Four\Test создать экземпляры всех классов и �
 ```
 Ответ:
 ```
-Fatal error: Uncaught Error: Class "One\Test1" not found in D:\Server543\OSPanel\domains\autoload\autoload\test3\index.php:8
-Stack trace:
-#0 {main}
-  thrown in D:\Server543\OSPanel\domains\autoload\autoload\test3\index.php on line 8
-  
-  Невидет классы
+C:\php\php.exe D:\Server543\OSPanel\domains\autoload\autoload\test3\index.php
+its works!
+Doing Test1
+Doing Test2
+Doing Test3
+Process finished with exit code 0
 ```

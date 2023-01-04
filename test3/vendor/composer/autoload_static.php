@@ -4,20 +4,10 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9f3f56f754a8b0a92a0f535e213781e3
+class ComposerStaticInit90cb9ea500ae1b4ce281fc1beb2668d3
 {
-    public static $prefixLengthsPsr4 = array (
-        'A' => 
-        array (
-            'App\\Test3\\' => 10,
-        ),
-    );
-
-    public static $prefixDirsPsr4 = array (
-        'App\\Test3\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/src',
     );
 
     public static $classMap = array (
@@ -27,9 +17,8 @@ class ComposerStaticInit9f3f56f754a8b0a92a0f535e213781e3
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit9f3f56f754a8b0a92a0f535e213781e3::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit9f3f56f754a8b0a92a0f535e213781e3::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit9f3f56f754a8b0a92a0f535e213781e3::$classMap;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit90cb9ea500ae1b4ce281fc1beb2668d3::$fallbackDirsPsr4;
+            $loader->classMap = ComposerStaticInit90cb9ea500ae1b4ce281fc1beb2668d3::$classMap;
 
         }, null, ClassLoader::class);
     }
